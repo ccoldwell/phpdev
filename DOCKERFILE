@@ -1,0 +1,7 @@
+FROM php:7.2-cli
+
+# create volume
+RUN mkdir -p /src
+
+# launch
+CMD bash

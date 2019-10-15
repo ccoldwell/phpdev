@@ -1,0 +1,14 @@
+#!/bin/bash
+
+#
+# This should go in /usr/local/bin to be in the path
+# this will launch a linux container and mount your code
+# at /src then drop you into that directory ready to go
+#
+
+
+docker run  \
+-v `pwd`:/src \
+-w /src \
+-l php/dev \
+-ti --rm php/dev bash
